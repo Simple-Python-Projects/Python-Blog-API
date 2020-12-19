@@ -1,0 +1,14 @@
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+from api.models import Tag
+from api.serializers.tagserializer import TagSerializer
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+
+tag = Tag(name='foo')
+tag.save()
+
