@@ -1,2 +1,3 @@
 from api.serializers.tag_serializer import TagSerializer
 from api.serializers.category_serializer import CategorySerializer
+from api.serializers.post_serializer import PostSerializer
